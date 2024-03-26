@@ -1,0 +1,43 @@
+name: My Project
+commands:
+  init:
+    name: Initialization
+    steps:
+      - name: Create a project template
+        run: cargo new my_new_project
+  dev:
+    name: Development
+    steps:
+      - name: Run the application in a development process
+        run: cargo run develop # or use other commands
+  lint:
+    name: Lint the codebase
+    steps:
+      - name: Run the linter and check for errors
+        run: # run your linter
+  test:
+    name: Test your codebase / system
+    steps:
+      - name: Run the tester and check for errors
+        run: # run the tester
+  build:
+    name: Build the application / system
+    steps:
+      - name: Lint the codebase / system
+        run: masdfw
+      - name: Test the codebase / system
+        run: # run the tester
+      - name: Build the codebase / system
+        run: # run the builder system
+  deploy:
+    name: Deployment
+    steps:
+      - name: Lint the codebase / system
+        run: 
+      - name: Test the codebase / system
+        run: # run the tester
+      - name: Build the codebase / system
+        run: # run the builder system
+      - name: Deploy the codebase / system
+        run: # run the deployer system
+  
